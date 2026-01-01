@@ -1,0 +1,8 @@
+# Place app icon files here:
+# - app_icon.png (1024x1024) - White square with black circle in center
+# - app_icon_foreground.png - Foreground layer for adaptive icon
+#
+# Design: Minimalist "Halt" icon
+# - Background: White (#FFFFFF)
+# - Circle: Black (#000000) centered
+# - No gradients, no rounded corners
