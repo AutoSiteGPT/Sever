@@ -13,8 +13,11 @@ class BlockingForegroundService : Service() {
         private const val CHANNEL_ID = "halt_blocking_channel"
     }
     
+    private lateinit var storage: BlockedAppsStorage
+    
     override fun onCreate() {
         super.onCreate()
+        storage = BlockedAppsStorage(this)
         createNotificationChannel()
     }
     
@@ -23,12 +26,21 @@ class BlockingForegroundService : Service() {
             "START_BLOCKING" -> {
                 val packageNames = intent.getStringArrayListExtra("packageNames")
                 if (packageNames != null) {
+                    // Save to persistent storage
+                    storage.saveBlockedPackages(packageNames)
+                    storage.setBlockingActive(true)
+                    
+                    // Update accessibility service
                     AppBlockerAccessibilityService.blockedPackages = packageNames.toSet()
                     AppBlockerAccessibilityService.isBlocking = true
                     startForeground(NOTIFICATION_ID, createNotification())
                 }
             }
             "STOP_BLOCKING" -> {
+                // Clear persistent storage
+                storage.setBlockingActive(false)
+                
+                // Stop accessibility service
                 AppBlockerAccessibilityService.isBlocking = false
                 AppBlockerAccessibilityService.blockedPackages = emptySet()
                 stopForeground(STOP_FOREGROUND_REMOVE)

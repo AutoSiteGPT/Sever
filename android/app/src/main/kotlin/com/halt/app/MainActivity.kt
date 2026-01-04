@@ -10,9 +10,12 @@ import io.flutter.plugin.common.MethodChannel
 
 class MainActivity: FlutterActivity() {
     private val CHANNEL = "com.halt.app/blocker"
+    private lateinit var permissionManager: PermissionManager
     
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        
+        permissionManager = PermissionManager(this)
         
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL).setMethodCallHandler { call, result ->
             when (call.method) {
@@ -22,6 +25,25 @@ class MainActivity: FlutterActivity() {
                 "requestAccessibilityPermission" -> {
                     openAccessibilitySettings()
                     result.success(true)
+                }
+                "checkUsageStatsPermission" -> {
+                    result.success(permissionManager.hasUsageStatsPermission())
+                }
+                "requestUsageStatsPermission" -> {
+                    permissionManager.requestUsageStatsPermission()
+                    result.success(true)
+                }
+                "checkBatteryOptimization" -> {
+                    result.success(permissionManager.isBatteryOptimizationDisabled())
+                }
+                "requestBatteryOptimization" -> {
+                    permissionManager.requestDisableBatteryOptimization()
+                    result.success(true)
+                }
+                "checkAllPermissions" -> {
+                    val allGranted = isAccessibilityServiceEnabled() &&
+                                   permissionManager.hasAllPermissions()
+                    result.success(allGranted)
                 }
                 "startBlockingService" -> {
                     val packageNames = call.argument<List<String>>("packageNames")
