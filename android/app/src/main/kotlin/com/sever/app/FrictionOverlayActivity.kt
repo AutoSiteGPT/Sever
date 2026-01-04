@@ -1,4 +1,4 @@
-package com.halt.app
+package com.sever.app
 
 import android.app.Activity
 import android.content.pm.PackageManager

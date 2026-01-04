@@ -1,4 +1,4 @@
-package com.halt.app
+package com.sever.app
 
 import android.app.*
 import android.content.Intent
@@ -10,7 +10,7 @@ class BlockingForegroundService : Service() {
     
     companion object {
         private const val NOTIFICATION_ID = 1
-        private const val CHANNEL_ID = "halt_blocking_channel"
+        private const val CHANNEL_ID = "sever_blocking_channel"
     }
     
     private lateinit var storage: BlockedAppsStorage

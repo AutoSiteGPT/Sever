@@ -1,4 +1,4 @@
-# Halt - Quick Start Guide
+# Sever - Quick Start Guide
 
 ## 🚀 Get Started in 5 Minutes
 
@@ -32,7 +32,7 @@ flutter pub get
 4. Open [`lib/services/subscription_service.dart`](lib/services/subscription_service.dart:8)
 5. Replace `YOUR_REVENUECAT_API_KEY_HERE` with your actual key
 6. Create a product in RevenueCat:
-   - Product ID: `halt_pro_annual`
+   - Product ID: `sever_pro_annual`
    - Price: $39.99
    - Duration: 1 year
 
@@ -113,7 +113,7 @@ Letter Spacing: -0.02
 4. Tap "START BLOCKING"
 5. Try to open a blocked app
 6. iOS will show shield screen
-7. Open Halt and hold for 5 seconds to bypass
+7. Open Sever and hold for 5 seconds to bypass
 
 ### Test Android Blocking
 1. Launch app
@@ -131,12 +131,12 @@ Letter Spacing: -0.02
 - **Solution**: Ensure iOS 15+ on device
 
 ### Android: "Service stops after a while"
-- **Solution**: Disable battery optimization for Halt
+- **Solution**: Disable battery optimization for Sever
 - **Solution**: Check that Foreground Service is running
 
 ### RevenueCat: "No offerings available"
 - **Solution**: Verify API key is correct
-- **Solution**: Ensure product ID matches exactly: `halt_pro_annual`
+- **Solution**: Ensure product ID matches exactly: `sever_pro_annual`
 - **Solution**: Wait a few minutes for RevenueCat to sync
 
 ### Fonts not loading
@@ -196,7 +196,7 @@ flutter build appbundle --release
 
 - **Documentation**: See [`README.md`](README.md:1)
 - **Issues**: Check common issues above
-- **Contact**: support@haltapp.com
+- **Contact**: support@severapp.com
 
 ---
 

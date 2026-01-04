@@ -1,4 +1,4 @@
-package com.halt.app
+package com.sever.app
 
 import android.accessibilityservice.AccessibilityService
 import android.content.Intent

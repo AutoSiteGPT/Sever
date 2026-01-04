@@ -1,4 +1,4 @@
-package com.halt.app
+package com.sever.app
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -10,7 +10,7 @@ import android.content.SharedPreferences
 class BlockedAppsStorage(context: Context) {
     
     private val prefs: SharedPreferences = context.getSharedPreferences(
-        "halt_blocked_apps",
+        "sever_blocked_apps",
         Context.MODE_PRIVATE
     )
     

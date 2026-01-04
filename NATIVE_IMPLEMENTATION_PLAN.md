@@ -4,7 +4,7 @@
 
 ### ✅ Already Implemented
 - Flutter UI (complete)
-- MethodChannel defined: `com.halt.app/blocker`
+- MethodChannel defined: `com.sever.app/blocker`
 - Basic Android AccessibilityService
 - Basic iOS FamilyControls integration
 - Foreground Service structure
@@ -50,17 +50,17 @@
 ## Files to Add (NO MODIFICATIONS TO EXISTING DART)
 
 ### Android
-- `android/app/src/main/kotlin/com/halt/app/BlockedAppsStorage.kt`
-- `android/app/src/main/kotlin/com/halt/app/PermissionManager.kt`
-- `android/app/src/main/kotlin/com/halt/app/BootReceiver.kt`
+- `android/app/src/main/kotlin/com/sever/app/BlockedAppsStorage.kt`
+- `android/app/src/main/kotlin/com/sever/app/PermissionManager.kt`
+- `android/app/src/main/kotlin/com/sever/app/BootReceiver.kt`
 - Update `android/app/src/main/AndroidManifest.xml` (permissions only)
 
 ### iOS
 - `ios/Runner/BlockedAppsManager.swift`
 - `ios/Runner/AppGroupManager.swift`
-- `ios/HaltDeviceActivityMonitor/` (new extension)
+- `ios/SeverDeviceActivityMonitor/` (new extension)
 - `ios/Runner.entitlements`
-- `ios/HaltDeviceActivityMonitor.entitlements`
+- `ios/SeverDeviceActivityMonitor.entitlements`
 
 ### Documentation
 - `NATIVE_SETUP_GUIDE.md`

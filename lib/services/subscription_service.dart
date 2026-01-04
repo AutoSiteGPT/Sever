@@ -4,7 +4,7 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 class SubscriptionService extends ChangeNotifier {
   static const String _revenueCatApiKey = 'YOUR_REVENUECAT_API_KEY_HERE';
   static const String _proEntitlementId = 'pro';
-  static const String _annualProductId = 'halt_pro_annual';
+  static const String _annualProductId = 'sever_pro_annual';
   
   bool _isPro = false;
   bool _isInitialized = false;

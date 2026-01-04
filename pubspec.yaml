@@ -1,4 +1,4 @@
-name: halt
+name: sever
 description: A high-end minimalist productivity app that blocks distracting apps with intentional friction.
 publish_to: 'none'
 version: 1.0.0+1
@@ -55,4 +55,4 @@ flutter_launcher_icons:
   adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
 
 flutter_launcher_name:
-  name: "Halt"
+  name: "Sever"

@@ -5,7 +5,7 @@ import 'storage_service.dart';
 import '../models/blocked_app.dart';
 
 class AppBlockerService extends ChangeNotifier {
-  static const MethodChannel _channel = MethodChannel('com.halt.app/blocker');
+  static const MethodChannel _channel = MethodChannel('com.sever.app/blocker');
   
   final StorageService _storageService;
   bool _isServiceRunning = false;

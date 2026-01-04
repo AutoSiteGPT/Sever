@@ -13,7 +13,7 @@ import ManagedSettings
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         let controller : FlutterViewController = window?.rootViewController as! FlutterViewController
-        let blockerChannel = FlutterMethodChannel(name: "com.halt.app/blocker",
+        let blockerChannel = FlutterMethodChannel(name: "com.sever.app/blocker",
                                                    binaryMessenger: controller.binaryMessenger)
         
         blockerChannel.setMethodCallHandler({

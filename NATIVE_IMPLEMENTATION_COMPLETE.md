@@ -164,7 +164,7 @@ C. Document limitation for future enhancement
 - [ ] Enable blocking
 - [ ] Try to open any app
 - [ ] Verify shield appears
-- [ ] Open Halt app
+- [ ] Open Sever app
 - [ ] Disable blocking
 - [ ] Verify apps accessible
 

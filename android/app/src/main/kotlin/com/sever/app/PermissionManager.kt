@@ -1,4 +1,4 @@
-package com.halt.app
+package com.sever.app
 
 import android.app.AppOpsManager
 import android.content.Context

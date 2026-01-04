@@ -1,6 +1,6 @@
 # Native Setup Guide
 
-Complete guide for setting up native Android and iOS functionality for the Halt app.
+Complete guide for setting up native Android and iOS functionality for the Sever app.
 
 ## 🤖 Android Setup
 
@@ -18,10 +18,10 @@ flutter run -d <android-device-id>
 
 ### Step 2: Grant Accessibility Permission
 
-1. Open the Halt app
+1. Open the Sever app
 2. Tap "START BLOCKING"
 3. App will open Accessibility Settings
-4. Find "Halt" in the list
+4. Find "Sever" in the list
 5. Toggle ON
 6. Confirm the warning dialog
 
@@ -32,7 +32,7 @@ flutter run -d <android-device-id>
 The app will automatically request this when you start blocking.
 
 1. Settings will open automatically
-2. Find "Halt" in the list
+2. Find "Sever" in the list
 3. Toggle "Permit usage access" ON
 
 **Why needed:** Required for detecting foreground app changes on Android 10+.
@@ -43,14 +43,14 @@ The app will request this automatically.
 
 1. Tap "Allow" when prompted
 2. Or manually: Settings → Battery → Battery Optimization
-3. Find "Halt"
+3. Find "Sever"
 4. Select "Don't optimize"
 
 **Why needed:** Prevents Android from killing the blocking service.
 
 ### Step 5: Test Blocking
 
-1. In Halt app, tap "SELECT APPS"
+1. In Sever app, tap "SELECT APPS"
 2. Choose apps to block (e.g., Instagram, Twitter)
 3. Tap "SAVE"
 4. Tap "START BLOCKING"
@@ -75,7 +75,7 @@ The app will request this automatically.
 **Problem:** Service stops after a while
 - **Solution:** Disable battery optimization
 - **Solution:** Check if manufacturer has aggressive battery management
-- **Solution:** Add Halt to "Protected apps" (Huawei, Xiaomi, etc.)
+- **Solution:** Add Sever to "Protected apps" (Huawei, Xiaomi, etc.)
 
 **Problem:** Blocking doesn't survive reboot
 - **Solution:** Check RECEIVE_BOOT_COMPLETED permission
@@ -120,7 +120,7 @@ flutter run -d <ios-device-id>
 
 ### Step 5: Grant FamilyControls Authorization
 
-1. Open Halt app
+1. Open Sever app
 2. Tap "START BLOCKING"
 3. iOS will show FamilyControls permission dialog
 4. Tap "Allow"
@@ -132,10 +132,10 @@ flutter run -d <ios-device-id>
 
 ⚠️ **Current Limitation:** iOS implementation currently blocks ALL apps, not selective.
 
-1. In Halt app, enable blocking
+1. In Sever app, enable blocking
 2. Try to open any app
 3. iOS will show a shield screen
-4. Open Halt app
+4. Open Sever app
 5. Disable blocking to access apps again
 
 ### iOS Known Limitations

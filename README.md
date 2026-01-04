@@ -1,10 +1,10 @@
-# Halt
+# Sever
 
 A high-end minimalist productivity app that blocks distracting apps with intentional friction.
 
 ## Overview
 
-**Halt** is a premium app blocking solution designed with "dark luxury" aesthetics. It helps users maintain focus by adding a 5-second friction screen when attempting to open blocked apps. Built with Flutter for both iOS and Android.
+**Sever** is a premium app blocking solution designed with "dark luxury" aesthetics. It helps users maintain focus by adding a 5-second friction screen when attempting to open blocked apps. Built with Flutter for both iOS and Android.
 
 ## Features
 
@@ -30,7 +30,7 @@ A high-end minimalist productivity app that blocks distracting apps with intenti
 ## Project Structure
 
 ```
-halt/
+sever/
 ├── lib/
 │   ├── main.dart                          # App entry point with dark theme
 │   ├── models/
@@ -52,7 +52,7 @@ halt/
 ├── android/
 │   └── app/src/main/
 │       ├── AndroidManifest.xml            # Android permissions
-│       ├── kotlin/com/halt/app/
+│       ├── kotlin/com/sever/app/
 │       │   ├── MainActivity.kt            # Android native bridge
 │       │   ├── AppBlockerAccessibilityService.kt
 │       │   ├── BlockingForegroundService.kt
@@ -81,7 +81,7 @@ halt/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd halt
+   cd sever
    ```
 
 2. **Install Flutter dependencies**
@@ -105,7 +105,7 @@ halt/
      ```dart
      static const String _revenueCatApiKey = 'YOUR_API_KEY_HERE';
      ```
-   - Create a product with ID: `halt_pro_annual` at $39.99/year
+   - Create a product with ID: `sever_pro_annual` at $39.99/year
 
 ### iOS Setup
 
@@ -172,7 +172,7 @@ halt/
 1. User grants FamilyControls authorization
 2. App uses `ManagedSettingsStore` to shield selected apps
 3. When user tries to open blocked app, iOS shows shield screen
-4. User must open Halt and complete 5-second hold to temporarily unblock
+4. User must open Sever and complete 5-second hold to temporarily unblock
 
 ### Android (AccessibilityService)
 1. User enables Accessibility Service
@@ -193,7 +193,7 @@ halt/
 
 3. **App Review Notes**
    ```
-   Halt uses the FamilyControls framework to help users reduce screen time 
+   Sever uses the FamilyControls framework to help users reduce screen time 
    by blocking selected apps. This permission is essential for the core 
    functionality of the app. We only use Screen Time controls to enable 
    app blocking and do not collect or share any user data.
@@ -226,7 +226,7 @@ halt/
 
 ### Testing Android Blocking
 - Test on physical device for best results
-- Ensure battery optimization is disabled for Halt
+- Ensure battery optimization is disabled for Sever
 
 ### Common Issues
 
@@ -248,7 +248,7 @@ Proprietary - All rights reserved
 
 ## Support
 
-For support, contact: support@haltapp.com
+For support, contact: support@severapp.com
 
 ---
 

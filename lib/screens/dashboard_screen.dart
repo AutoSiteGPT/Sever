@@ -21,7 +21,7 @@ class DashboardScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: 40),
                 Text(
-                  'HALT',
+                  'SEVER',
                   style: Theme.of(context).textTheme.displayLarge,
                 ),
                 const SizedBox(height: 8),

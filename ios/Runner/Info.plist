@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Halt</string>
+	<string>Sever</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Halt</string>
+	<string>Sever</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -50,7 +50,7 @@
 	
 	<!-- FamilyControls Permission -->
 	<key>NSFamilyControlsUsageDescription</key>
-	<string>Halt uses Screen Time controls to help you reduce distractions by blocking selected apps. This permission is required to enable app blocking functionality and help you maintain focus on what matters most.</string>
+	<string>Sever uses Screen Time controls to help you reduce distractions by blocking selected apps. This permission is required to enable app blocking functionality and help you maintain focus on what matters most.</string>
 	
 	<!-- Background Modes -->
 	<key>UIBackgroundModes</key>

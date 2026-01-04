@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Halt</string>
-    <string name="accessibility_service_description">Halt uses this service to detect when you open blocked apps and display a friction screen to help you maintain focus. No data is collected or shared.</string>
-    <string name="foreground_service_notification_title">Halt is Active</string>
+    <string name="app_name">Sever</string>
+    <string name="accessibility_service_description">Sever uses this service to detect when you open blocked apps and display a friction screen to help you maintain focus. No data is collected or shared.</string>
+    <string name="foreground_service_notification_title">Sever is Active</string>
     <string name="foreground_service_notification_text">Blocking distracting apps</string>
 </resources>

@@ -1,6 +1,6 @@
 # Store Submission Notes
 
-Critical information for submitting Halt to Google Play Store and Apple App Store.
+Critical information for submitting Sever to Google Play Store and Apple App Store.
 
 ## 🤖 Google Play Store Submission
 
@@ -23,7 +23,7 @@ Critical information for submitting Halt to Google Play Store and Apple App Stor
 
 **Privacy Policy Must State:**
 ```
-Halt does not collect, store, or transmit any personal data.
+Sever does not collect, store, or transmit any personal data.
 All app blocking preferences are stored locally on your device.
 We use RevenueCat only for processing subscription payments.
 ```
@@ -66,12 +66,12 @@ User Benefit: Blocking persists across reboots
 
 **Required Form Fields:**
 
-**Service Name:** Halt App Blocker
+**Service Name:** Sever App Blocker
 
 **Service Description:**
 ```
-Halt uses Accessibility Service to detect when you attempt to open blocked apps.
-When a blocked app is detected, Halt displays a friction screen requiring you to
+Sever uses Accessibility Service to detect when you attempt to open blocked apps.
+When a blocked app is detected, Sever displays a friction screen requiring you to
 hold for 5 seconds before proceeding. This intentional friction helps reduce
 impulsive app usage and improve focus.
 
@@ -92,7 +92,7 @@ personal data, or user interactions within apps.
 
 **Justification:**
 ```
-Halt uses a foreground service to maintain app blocking functionality while
+Sever uses a foreground service to maintain app blocking functionality while
 the app is in the background. This is essential for the core purpose of the
 app - preventing access to distracting apps. The service displays a persistent
 notification and can be stopped at any time by the user.
@@ -107,7 +107,7 @@ notification and can be stopped at any time by the user.
 
 ### Feature Graphic
 - 1024 x 500 px
-- Show app icon + "Halt" text
+- Show app icon + "Sever" text
 - Dark theme (#000000 background)
 - Minimalist design
 
@@ -120,9 +120,9 @@ Block distracting apps with intentional friction. Focus on what matters.
 
 **Full Description:**
 ```
-HALT - Intentional Friction for Focus
+SEVER - Intentional Friction for Focus
 
-Halt helps you break phone addiction by adding a 5-second friction screen
+Sever helps you break phone addiction by adding a 5-second friction screen
 before opening distracting apps. This intentional pause gives you time to
 reconsider and make conscious choices about your screen time.
 
@@ -182,7 +182,7 @@ IMPORTANT NOTES FOR REVIEWERS:
    - Required for core functionality
    - User can stop it anytime
    - Shows persistent notification
-   - Clearly labeled "Halt is Active"
+   - Clearly labeled "Sever is Active"
 
 4. NO DATA COLLECTION:
    - All data stored locally
@@ -217,7 +217,7 @@ Test Account: Not required (no login)
 
 **Purpose String (Already in Info.plist):**
 ```
-Halt uses Screen Time controls to help you reduce distractions by blocking
+Sever uses Screen Time controls to help you reduce distractions by blocking
 selected apps. This permission is required to enable app blocking functionality
 and help you maintain focus on what matters most.
 ```
@@ -245,7 +245,7 @@ IMPORTANT NOTES FOR REVIEWERS:
    - Enable blocking in the app
    - Try to open any app
    - iOS will show shield screen
-   - Open Halt app to disable blocking
+   - Open Sever app to disable blocking
 
 4. WHY ALL APPS:
    - FamilyControls requires FamilyActivityPicker for selective blocking
@@ -285,11 +285,11 @@ Must host privacy policy at a public URL:
 https://yourdomain.com/privacy
 
 Content:
-HALT PRIVACY POLICY
+SEVER PRIVACY POLICY
 
 Last Updated: [Date]
 
-Halt does not collect, store, or transmit any personal information.
+Sever does not collect, store, or transmit any personal information.
 
 DATA COLLECTION:
 - We do not collect any user data
@@ -311,7 +311,7 @@ PAYMENTS:
 - We do not store payment information
 
 CONTACT:
-support@haltapp.com
+support@severapp.com
 
 This privacy policy may be updated. Check this page for changes.
 ```
@@ -396,7 +396,7 @@ If rejected, respond professionally:
 ```
 Thank you for reviewing our app. We understand your concerns about [issue].
 
-Halt is designed as a Digital Wellbeing tool to help users reduce phone
+Sever is designed as a Digital Wellbeing tool to help users reduce phone
 addiction through intentional friction. Here's how we address your concerns:
 
 [Specific response to rejection reason]
@@ -407,7 +407,7 @@ We've also:
 - Improved permission request flow
 - Added more context in review notes
 
-We believe Halt provides genuine value to users struggling with phone
+We believe Sever provides genuine value to users struggling with phone
 addiction and would appreciate reconsideration.
 
 Thank you for your time.

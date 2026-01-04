@@ -36,18 +36,18 @@ void main() async {
         ChangeNotifierProvider.value(value: subscriptionService),
         ChangeNotifierProvider.value(value: appBlockerService),
       ],
-      child: const HaltApp(),
+      child: const SeverApp(),
     ),
   );
 }
 
-class HaltApp extends StatelessWidget {
-  const HaltApp({super.key});
+class SeverApp extends StatelessWidget {
+  const SeverApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Halt',
+      title: 'Sever',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,

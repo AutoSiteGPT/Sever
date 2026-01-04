@@ -111,7 +111,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
                     ),
                     const SizedBox(height: 60),
                     Text(
-                      'HALT PRO',
+                      'SEVER PRO',
                       style: Theme.of(context).textTheme.displayLarge,
                     ),
                     const SizedBox(height: 16),

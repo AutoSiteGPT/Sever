@@ -1,4 +1,4 @@
-package com.halt.app
+package com.sever.app
 
 import android.content.Intent
 import android.content.pm.ApplicationInfo
@@ -9,7 +9,7 @@ import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 
 class MainActivity: FlutterActivity() {
-    private val CHANNEL = "com.halt.app/blocker"
+    private val CHANNEL = "com.sever.app/blocker"
     private lateinit var permissionManager: PermissionManager
     
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
@@ -104,7 +104,7 @@ class MainActivity: FlutterActivity() {
         val packages = pm.getInstalledApplications(PackageManager.GET_META_DATA)
         
         for (packageInfo in packages) {
-            // Filter out system apps and the Halt app itself
+            // Filter out system apps and the Sever app itself
             if ((packageInfo.flags and ApplicationInfo.FLAG_SYSTEM) == 0 && 
                 packageInfo.packageName != packageName) {
                 

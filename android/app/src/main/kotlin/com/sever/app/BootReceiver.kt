@@ -1,4 +1,4 @@
-package com.halt.app
+package com.sever.app
 
 import android.content.BroadcastReceiver
 import android.content.Context
